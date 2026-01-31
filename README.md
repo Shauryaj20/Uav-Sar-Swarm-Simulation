@@ -36,14 +36,24 @@ The simulation compared both approaches over 200 steps.The Swarm system demonstr
 * **Visualization:** `Matplotlib` (Heatmaps/Charts), `FFmpeg` (Animation generation)
 * **Simulation Logic:** Custom state-machine for drone battery and health monitoring.
 
-## 📂 Visuals
+## 📂 Visuals & Simulation Demos
 ### 1. Coverage Efficiency
-*(Upload `image_226898.png` here from your report)*
-*Figure 1: The Swarm system (Blue line) reaches 95% coverage rapidly, while the Single Drone (Red line) struggles to pass 50% due to recharge delays.*
-
-### 2. Heatmap Analysis
-*(Upload `image_226444.png` here)*
-*Figure 2: Multi-Drone Heatmap showing complete area coverage (Blue) and detected survivors (Red blocks).*
+The Swarm system (Blue) reaches 95% coverage rapidly, while the Single Drone (Red) struggles due to frequent recharging downtime.
+![Coverage Chart](./coverage_comparison.png)
+### 2. Heatmap Comparison
+A comparison of the final "Visited Nodes" (Blue) and "Detected Survivors" (Red). Note the gaps in the Single Drone's coverage.
+| Single Drone (Ground Recharge) | Multi-Drone Swarm (Mid-Air Swap) |
+| :---: | :---: |
+| ![Single Heatmap](./uav_single_heatmap.png) | ![Swarm Heatmap](./uav_sar_heatmap.png) |
+| *Struggles to cover the upper half* | *Complete grid coverage achieved* |
+### 3. Simulation Demos 🎥
+Watch the autonomous decision logic in action.
+**Scenario A: Single Drone (Battery Recharge Logic)**
+<video src="./uav_single_anim.mp4" controls="controls" style="max-width: 730px;">
+</video>
+**Scenario B: Swarm System (Mid-Air Swap Logic)**
+<video src="./uav_simulation_anim.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 ## 📜 Methodology
 1.  **Environment Setup:** A 20x20 grid with randomly placed survivor nodes.
