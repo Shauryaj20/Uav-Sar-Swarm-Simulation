@@ -52,7 +52,7 @@ Watch the autonomous decision logic in action.
 | **Scenario A: Single Drone** | **Scenario B: Swarm System** |
 | :---: | :---: |
 | (https://github.com/user-attachments/assets/9f5dfc1e-45b7-4ce5-aeca-687dd6ee920a) | (https://github.com/user-attachments/assets/b9818912-b3c0-48fa-b26b-37a412df58e7) |
-| *Struggles for complete coverage due to battery | *Continuous operation via mid-air swaps* |
+| *Struggles for complete coverage due to battery* | *Continuous operation via mid-air swaps* |
 
 ## 📜 Methodology
 1.  **Environment Setup:** A 20x20 grid with randomly placed survivor nodes.
